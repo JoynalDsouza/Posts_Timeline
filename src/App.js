@@ -43,7 +43,7 @@ function App() {
   };
 
   return (
-    <div class="body">
+    <div class="body mb-6">
       <PostForm
         gifs={gifs}
         handleSubmit={handleSubmit}

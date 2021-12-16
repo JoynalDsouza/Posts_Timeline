@@ -2,7 +2,7 @@ import React from "react";
 
 const PostList = ({ post: { username, createdAt, body, imgUrl } }) => {
   return (
-    <div className="col-12 col-md-6">
+    <div className="col-12 col-md-6 border border-teal-300">
       <div className="d-flex align-items-center">
         <img
           src="images/profile.jpg"
@@ -10,7 +10,7 @@ const PostList = ({ post: { username, createdAt, body, imgUrl } }) => {
           width="75"
           className="img-thumbnail-border-radius"
         />
-        <span>
+        <span >
           {username} <br></br>
           {createdAt.substr(0,10)} at {createdAt.split('T')[1].substr(0,5)}
         </span>
